@@ -1,0 +1,18 @@
+Sławek ma talię n kart, z jednej strony białych, z drugiej zaś czarnych. Na każdej ze stron każdej karty znajduje się jedna liczba całkowita dodatnia. Sławek zastanawia się, czy może wybrać ze swojej talii jakiś niepusty podzbiór kart, taki, że suma liczb na białych stronach wybranych kart jest równa sumie liczb na czarnych stronach wybranych kart, i suma ta wynosi k. Napisz program, który dla zadanego składu talii kart Sławka obliczy na ile sposobów Sławek może takiego wyboru dokonać.
+Wejście
+
+Dwie liczby całkowite dodatnie: 1≤n≤1000, 1≤k≤100. Następnie n linii opisujących karty w talii. W każdej z nich po dwie liczby całkowite dodatnie: 1≤a,b≤100, pierwsza z nich oznacza liczbę zapisaną na białej stronie karty, druga natomiast liczbę na czarnej stronie karty.
+Wyjście
+
+Jedna liczba całkowita - ilość możliwych wyborów podzbioru kart spełniającego warunki zadania. Wynik będzie na pewno mniejszy niż 10^15.
+Przykład
+
+Dla danych wejściowych
+4 5
+1 2
+3 2
+1 2
+1 1
+poprawną odpowiedzią jest
+2
+bo możemy wybrać karty nr: 1, 2, 4, lub karty nr: 2, 3, 4.

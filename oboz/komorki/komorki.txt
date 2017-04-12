@@ -1,0 +1,41 @@
+Na początku była komórka. Jedna, jedyna niepowtarzalna komórka. Jednak komórce znudziło się takie po prostu bycie komórką. postanowiła coś więc ze sobą zrobić. Pierwsze co jej przyszło na myśl to - podzielić się. W końcu wszystkie komórki lubią się dzielić. Tak więc komórka dzieliła się i dzieliła. W każdym momencie każda z komórek należąca do zbioru komórek powstałych przez podział mogła się podzielić lub nie. Komórki pamiętają jednak stare dobre czasy, gdy było ich mniej. Czasem chciałyby się wrócić do któregoś z poprzednich stanów (jeśli komórki a i b powstały przez podział komórki c, to c jest poprzednim stanem zarówno dla komórki a jak i dla komórki b). Pewien naukowiec obserwujący te komórki zliczył, ze wszystkich stanów było n oraz, że doszło do l podziałów. Każdemu z tych podziałów dał wartość w zależności od tego ile komórek powstało z podziału jednej komórki Posumował je wszystkie i dostał liczbę m. Aby jakoś bardziej ogarnąć to zjawisko każdemu stanowi nadał numer.
+Zadanie
+
+Dla danej liczby wszystkich stanów w historii oraz danej sumy wartości podziałów oraz dla opisu każdego podziału powiedz jaki był ostatni stan, w którym dwie komórki były ostatnio razem
+Wejście
+
+W pierwszej linii wejścia znajdują się liczby n,m<85000 w kolejnych m liniach znajdują się pary liczb ai, bi oznaczające, że komórka bi powstała z podziału komórki ai. W kolejnym wierszu podana jest liczba t<300000 zapytań, po której następuje t linii, każda składa się z liczb ci, di ..
+Wyjście
+
+Wyjście składa się z t liczb, i-ta ma być numerem stanu w którym komórki ci, di były ostatnio razem.
+Przykład
+
+Dla danych wejściowych
+8 7
+5 6
+5 8
+5 3
+5 2
+5 7
+5 4
+5 1
+9
+6 8
+6 3
+1 3
+6 6
+7 1
+2 5
+6 3
+2 4
+1 1
+poprawną odpowiedzią jest
+5
+5
+5
+6
+5
+5
+5
+5
+1

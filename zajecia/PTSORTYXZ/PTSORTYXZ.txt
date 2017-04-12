@@ -1,0 +1,35 @@
+Posortuj punkty w 3D (YXZ)
+Problem code: PTSORTYXZ | Time: 2 s | Memory: 32 MB | Solved: no | print
+
+Dane są współrzędne n punktów w przestrzeni trójwymiarowej XYZ. Należy je posortować w kolejności YXZ, tzn. najpierw po współrzędnej Y, potem po X, a na końcu po Z.
+Wejście
+
+W pierwszej lini wejścia dana jest liczba n (1 ≤ n ≤ 100000) - ilość punktów do posortowania. Następnie danych jest n trójek liczb - są to współrzędne punktów w kolejności XYZ. Każda współrzędna jest liczbą całkowitą z przedziału [-1000, 1000]
+Wyjście
+
+Należy wpisać n trójek liczb - posortowane współrzędne punktów.
+Przykład
+
+Dla danych wejściowych
+10
+3 0 -5
+5 4 -2
+-4 5 -4
+-1 -5 5
+2 1 -2
+0 2 5
+-1 -5 3
+4 -3 3
+2 -5 0
+4 -5 -1
+poprawną odpowiedzią jest
+-1 -5 3
+-1 -5 5
+2 -5 0
+4 -5 -1
+4 -3 3
+3 0 -5
+2 1 -2
+0 2 5
+5 4 -2
+-4 5 -4

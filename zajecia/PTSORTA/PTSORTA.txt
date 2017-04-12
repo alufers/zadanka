@@ -1,0 +1,25 @@
+Sortowanie punktów (A)
+Problem code: PTSORTA | Time: 3 s | Memory: 32 MB | Solved: no | print
+
+Dane są współrzędne n punktów w kartezjańskim układzie współrzędnych. Należy je posortować w kolejności leksykograficznej (najpierw po pierwszej współrzędnej, później po drugiej).
+Wejście
+
+W pierwszej lini wejścia dana jest liczba n (1 ≤ n ≤ 10000) - ilość punktów do posortowania. Następnie danych jest n par liczb - są to współrzędne punktów.
+Wyjście
+
+Należy wpisać n par liczb - posortowane współrzędne punktów.
+Przykład
+
+Dla danych wejściowych
+5
+200 793
+336 509
+902 -511
+975 646
+353 151
+poprawną odpowiedzią jest
+200 793
+336 509
+353 151
+902 -511
+975 646

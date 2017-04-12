@@ -1,0 +1,30 @@
+Długość najdłuższego wspólnego podciągu
+
+Słowem u nazywamy dowolny skończony ciąg liter z alfabetu {a,b,c,...,z}. Podsłowem słowa u jest jego dowolny podciąg, np. podsłowami słowa deskorolka są między innymi ola, elka, deska, kolka, sroka. Dla danych dwóch słów u i v należy znaleźć długość ich najdłuższego wspólnego podsłowa. Na przykład wspólne podsłowa słów u=deskorolka i v=stokrotka, to między innymi a, o, ka, kka, oa, sroka, sooka, skoka, skroka, soroka. Łatwo zauważyć że nie istnieje wspólne podsłowo słów u i v dłuższe niż 6 (długość podsłowa np. skroka). Tak więc w tym przykładzie długością maksymalnie długiego wspólnego podsłowa słow u i v jest liczba 6.
+Zadanie
+
+Napisz program, który:
+wczyta ze standardowego wejścia: dwa słowa u i v,
+znajdzie długość ich maksymalnie długiego wspólnego podsłowa,
+wypisze wynik na standardowe wyjście.
+Wejście
+
+W pierwszej linii wejścia znajduje się jedna liczba całkowia D (1≤D≤1000), oznaczjąca liczbę przypadków do rozważenia. Opis każdego przypadku podany jest w czterech wierszach. Pierwszy wiersz zawiera liczbę całkowitą n (1 ≤ n ≤ 1 000), oznaczjąca długość słowa u. W następnym wierszu podane jest słowo u złozone wyłącznie z małych liter alfabetu angielskiego, tj. {a,b,...,z}. Trzeci wiersz zestawu zawiera liczbę całkowitą m (1 ≤ m ≤ 1 000), oznaczjąca długość słowa v. W następnym wierszu podane jest słowo v złozone wyłącznie z małych liter alfabetu angielskiego.
+Wyjście
+
+Dla każdego przypadku z wejścia Twój program powinien wypisać (w osobnej linii dla każdego przypadku z wejścia) liczbę będącą długością maksymalnie długiego wspólnego podsłowa danych słów u i v.
+Przykład
+
+Wejście:
+2
+10
+deskorolka
+9
+stokrotka
+5
+rafal
+5
+nowak
+Wyjście:
+6
+1

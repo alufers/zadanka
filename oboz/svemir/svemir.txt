@@ -1,0 +1,43 @@
+Planety
+Problem code: SVEMIR | Time: 4 s | Memory: 32 MB | Solved: no | print
+
+Bajtocja rozpoczęła erę podboju kosmosu. Podbiła niedawno N planet i chce je teraz połączyć tunelami hiperprzestrzennymi. Tunele są drogie więc chcemy zbudować ich jak najmniej. Zauważono, że wystarczy N-1 tuneli aby z każdej planety można było dostać się do każdej innej.
+Koszt budowy tunelu hiperprzestrzennego między planetami o współrzędnych (xa, ya, za) oraz (xb, yb, zc) obliczamy według wzoru TunnelCost[a,b] = min{ |xa-xb|, |ya-yb|, |za-zb| }
+Twoim zadaniem jest wyznaczenie kosztu najtańszego połączenia wszystkich planet ze sobą.
+Wejście
+
+Pierwsza linia wejścia zawiera jedną liczbę całkowitą N - liczbę planet. Każda z kolejnych N linii zawiera 3 liczby całkowite x,y,z oznaczające współrzędne planet.
+1 ≤ N ≤ 10^5, -10^9 ≤ x,y,z ≤ 10^9
+Żadne dwie planety nie będą w tym samym miejscu.
+Wyjście
+
+Na wyjściu powinna znajdować się jedna liczba całkowita - minimalny koszt połączenia planet.
+Przykłady
+
+Input:
+2
+1 5 10
+7 8 2
+
+Output:
+3
+
+Input:
+3
+-1 -1 -1
+5 5 5
+10 10 10
+
+Output:
+11
+
+Input:
+5
+11 -15 -15
+14 -5 -15
+-1 -1 -5
+10 -4 -1
+19 -4 19
+
+Output:
+4

@@ -1,0 +1,20 @@
+Województwa
+Problem code: WOJ | Time: 4 s | Memory: 32 MB | Solved: no | print
+
+W Bajtocji jest N województw. Przysparza to wielu problemów administracyjnych, dlatego władze Bajtocji postanowiły połączyć województwa w jedno. Proces łączenia będzie stopniowy — co jakiś czas władze wybiorą dwa województwa i scalą je w jedno. Wszyscy mieszkańcy mieszkający na terenie obu tych województw, będą przypisani do nowego województwa. Problem jest w tym, że województwa mają określone nazwy. Nazwą województwa po połączeniu dwóch województw jest nazwa liczniejszego (w sensie liczby mieszkańców) województwa, a w przypadku remisu można ją wybrać dowolnie. Bajtocja po połączeniu zmieni nazwę na nazwę województwa, które pozostało po połączeniu wszystkich województw. Rzecz jasna, kolejność łączenia ma tutaj ogromne znaczenie. Urzędnicy już zwietrzyli okazję do podstępu i oszustwa. Twoim zadaniem jest im przeszkodzić i uświadomić społeczeństwu jak mogą zostać oszukani.
+Zadanie
+
+Napisz program, który: wczyta liczności obecnie istniejącyh województw, wyznaczy numery województw, których nazwę może przyjąć Bajtocja i wypisze wynik na standardowe wyjście.
+Wejście
+
+W pierwszym wierszu wejścia znajduje się jedna liczba naturalna N, 1 <= N <= 500 000, określająca liczbę województw w Bajtocji. W drugim i ostatnim wierszu wejscia znajduje się ciąg N liczb całkowitych X_i, 1 <= X_i <= 10^18, pooddzielanych pojedynczymi odstępami. Są to liczności poszczególnych województw.
+Wyjście
+
+Twój program powinien wypisać na wyjście numery województw, których nazwę potencjalnie może przyjąć Bajtocja. Numery powinny zostać oddzielone pojedynczymi odstępami i wypisane w kolejności rosnącej.
+Przykład
+
+Dla danych wejściowych
+5
+10 3 2 6 7
+poprawną odpowiedzią jest
+1 4 5

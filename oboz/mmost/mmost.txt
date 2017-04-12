@@ -1,0 +1,24 @@
+Mosiężny most
+
+„Sierżant Colon ze Straży Miejskiej Ankh-Morpork stał na warcie. Pilnował Mosiężnego Mostu, głównego połączenia pomiędzy Ankh i Morpork. Przed kradzieżą. Jeśli chodziło o zapobieganie przestępstwom, sierżant Colon uważał, że najbezpieczniej jest myśleć w dużej skali. Istniała szkoła filozoficzna głosząca, że pilny stróż prawa w Ankh-Morpork powinien patrolować ulice i zaułki, przekupywać informatorów, śledzić podejrzanych i prowadzić tym podobne działania. Sierżant Colon w tej akurat szkole chodził na wagary. Nie dlatego, jak zapewniał, że walka o zmniejszenie poziomu przestępczości w Ankh-Morpork przypominała walkę o zmniejszenie zawartości soli w morzu, a pilny stróż prawa mógł liczyć najwyżej na uznanie wyrażone zdaniem: ”Patrzcie, ten trup w rynsztoku, czy to aby nie sierżant Colon?”. Nie; przyczyną było przekonanie, że nowoczesny, postępowy, inteligentny stróż prawa musi zawsze o jeden krok wyprzedzać dzisiejszego przestępcę. Pewnego dnia ktoś spróbuje ukraść Mosiężny Most, a wtedy znajdzie przy nim sierżanta Colona, który już na niego czeka.”
+(Terry Pratchett, ”Kosiarz”)
+Jak widać, nie jest łatwo ukraść sam most. Ale filary? Jest ich N i każdy ma pewną, całkiem niemałą zawartość mosiądzu. A to już coś! Nie można tylko zabrać żadnych trzech kolejnych, bo wtedy most mógłby się zawalić, a ten fakt raczej nie uszedłby uwagi sierżanta. Sprawdź, jaki największy zysk może przynieść śmiała nocna akcja.
+Wejście
+
+W pierwszym wierszu wejścia znajduje się liczba całkowita Z — liczba zestawów danych. Każdy zestaw danych zawiera w swojej pierwszej linii liczbę filarów N (N ≤ 100000), a w N kolejnych liniach liczby całkowite dodatnie v1,...,vN (vi ≤ 10000) — wartość mosiądzu zawartego w kolejnych filarach mostu.
+Wyjście
+
+Dla każdego zestawu danych wypisz jedną liczbę całkowitą — maksymalną wartość mosiądzu, jaką można zyskać okradając most.
+Przykład
+
+Dla danych wejściowych
+1 
+6 
+6 
+10 
+13 
+9 
+8 
+1 
+poprawną odpowiedzią jest
+33

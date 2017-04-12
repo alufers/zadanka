@@ -1,0 +1,28 @@
+Odejmowanie macierzy
+Problem code: MATRIX1 | Time: 10 s | Memory: 16 MB | Solved: no | print
+
+Bajtek znalazł na parkingu dwie macierze, każdą o rozmiarze n x m. Co można z nimi zrobić? Jest tyle możliwości... Bajtek postanowił sprawdzić, co się stanie jak odejmie jedną od drugiej.
+Twoim zadaniem będzie napisanie programu, który policzy różnicę dwóch macierzy.
+Wejście
+
+W pierwszej linii wejścia znajdują się dwie liczby n i m oznaczające rozmiary macierzy. (1 ≤ n, m ≤ 1000)
+W kolejnych n wierszach znajduje się po m liczb oddzielonych spacjami - są to kolejne liczby z pierwszej macierzy. Możesz założyć, że wartość bezwzględna każdej z liczb nie przekracza 1000.
+Później następuje pusta linia i opis drugiej macierzy, w podobnym formacie.
+Wyjście
+
+Należy wypisać n linii, w każdej po m liczb - opis macierzy, która będzie wynikiem tego działania.
+Przykład
+
+Dla danych wejściowych
+3 3
+-2 -2 -1 
+1 -3 -2 
+3 -2 0 
+
+0 -1 0 
+2 -3 -3 
+3 1 0 
+poprawną odpowiedzią jest
+-2 -1 -1 
+-1 0 1 
+0 -3 0 

@@ -1,0 +1,20 @@
+NajdłuższyPrefiks
+
+Zadanie
+
+Napisz program znajdujący najdłuższy prefiks wzorca będący podsłowem tekstu.
+W pierwszym wierszu wejścia znajdują się dwie liczby m - długość wzorca oraz n - długość tekstu (m≤n≤100000). 
+W drugim wierszu znajduje się słowo o długości m - wzorzec. 
+W trzecim wierszu znajduje się słowo o długości n - tekst.
+Wyjście
+
+W jedynym wierszu wyjścia należy wypisać największą liczbę k taką, że k literowy prefiks wzorca (czyli jego początek) jest podsłowem tekstu
+Przykład
+
+Dla danych wejściowych
+6 11
+rakarz
+abrakadabra
+
+poprawną odpowiedzią jest
+4

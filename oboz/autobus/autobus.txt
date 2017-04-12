@@ -1,0 +1,25 @@
+Autobus
+
+W pewnym mieście, gdzie mieszkają sami naukowcy, burmistrz miasta ma pewien problem. Otrzymał on pracę naukową, z której wynika, że naukowcy kiedy jadą rano autobusem do pracy nie rozmawiają między sobą. Nie wynika to z tego, że się nawzajem nie lubią, bo wręcz przeciwnie, są oni bardzo przyjaźni i często się śmieją. Wynika to z tego, że każdy z nich jadąc rano do pracy obmyśla nowe odkrycia i z nikim nie rozmawia. Burmistrz, który oczywiście też jest naukowcem rozpoczął badania (naukowe naturalnie), aby określić przyczynę takiego stanu rzeczy oraz nakłonić naukowców do tego, żeby więcej ze sobą rozmawiali podczas porannej jazdy autobusem. Na razie udało się ustalić tyle, że konstrukcje autobusów „sprzyjają” takiemu zachowaniu naukowców. Autobusy wyglądają tak, że miejsca siedzące są ustawione w jednym rzędzie, jedno obok drugiego, bez odstępów, ponumerowane kolejnymi liczbami naturalnymi. Ze względu na wąskie drzwi w autobusie, które znajdują się przy siedzeniu numer 1, pasażerowie wsiadają pojedynczo. Okazało się, że naukowcy wchodząc do autobusu siadają według następujących zasad:
+jeżeli wszystkie miejsca są wolne naukowiec wybiera dowolne miejsce;
+w przeciwnym wypadku wybierane jest miejsce, którego odległość do najbliższego zajętego miejsca jest jak największa;
+jeżeli miejsc, na których może usiąść naukowiec (zgodnie z poprzednim punktem) jest więcej to wybiera on takie, które jest najbliżej wejścia (tj. z najmniejszym numerkiem).
+Wiadomo, że pasażerowie wchodzą do autobusu tak długo, aż wszystkie miejsca siedzące będą zajęte. Badania prowadzone przez burmistrza są już na ukończeniu.
+Zadanie
+
+Do autobusu wsiada N naukowców (N to również liczba miejsc siedzących w autobusie). Wiemy, że pierwszy naukowiec siada na miejscu X. Twoim zadaniem jest określenie gdzie usiądzie ostatni naukowiec.
+Wejście
+
+Pierwsza linia wejścia zawiera liczbę całkowitą D (1 ≤ D ≤ 50), oznaczają liczbę zestawów danych. Każdy zestaw składa się z dwóch liczb całkowitych N oraz X (1 ≤ X ≤ N ≤ 20000000), zapisanych w jednej linii, oznaczających odpowiednio liczbę miejsc siedzących w autobusie (a tym samym łączną liczbę pasażerów) oraz numer miejsca, na którym usiądzie pierwszy pasażer.
+Wyjście
+
+Dla każdego zestawu danych należy wypisać, w osobnej linii, numer miejsca, na którym usiądzie ostatni pasażer wsiadający do autobusu.
+Przykład
+
+Wejście
+2
+3 2
+5 5
+Wyjście
+3
+4

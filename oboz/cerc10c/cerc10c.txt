@@ -1,0 +1,19 @@
+Casting Spells
+Problem code: CERC10C | Time: 1 s | Memory: 16 MB | Solved: no | print
+
+Rzucanie zaklęć jest dość trudną techniką. Przeważnie ludziom ciężko rozróżnić prawdziwe zaklęcia jak "abrahellehhelleh" (używane przez magów w bitwach i nauczane w Wyższych Szkołach Magii) od zwykłych wrzasków jak "rachelhellabracadabra" (używanych przez niedokształcone wiedźmy do krzyczenia na koty). Badania przeprowadzone przez Wyższą Szkołę Magiczną pokazały jednak, że można zmierzyć moc wyrazu (zarówno prawdziwego zaklęcia jak i zwykłego krzyku). okazuje się, że ma to wiele wspólnego ze zdolnością magów do wypowiadania słów wspak. (Faktycznie również piosenkarzy palono na stosie z powodu takich właśnie umiejętności - byli uważani za opętanych przez demony.) Uczeni magowie stwierdzili, że moc wyrazu jest równa długości najdłuższego podsłowa postaci wwRwwR, gdzie w jest dowolnym ciągiem znaków, a wR jest odwróconym słowem w. Jeśli takie podsłowo nie istnieje, moc danego słowa jest równa 0. na przykład, moc słowa abrahellehhelleh to 12, ponieważ zawiera hellehhelleh, a moc rachelhellabracadabra jest równa 0.
+Wejście
+
+W pierwszej linii znajduje się jedna liczba naturalna t - liczba testów, t < 40. W każdej z t linii znajduje się jedno słowo o długości nie większej niż 3*10^5 składające się z liter (małych lub dużych) alfabetu angielskiego.
+Wyjście
+
+T linii, w i-tej moc i-tego słowa na wejściu.
+Przykład
+
+Dla danych wejściowych
+2
+abrahellehhelleh
+rachelhellabracadabra
+poprawną odpowiedzią jest
+12
+0

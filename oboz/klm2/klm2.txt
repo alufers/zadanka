@@ -1,0 +1,23 @@
+Zakochany Żab
+
+Pan Żab siedzi na kamieniu na środku jeziora. Na innym kamieniu siedzi pani Żaba, którą pan Żab chciałby odwiedzić. Ponieważ Żab chciałby dobrze zaprezentować się przed panią Żabą, co wyklucza możliwość przepłynięcia do jej kamienia, przymierza się, by dotrzeć do niej przeskakując po kamieniach. Ten plan może udać się jedynie wtedy, gdy największa odległość między kamieniami na drodze wybranej przez pana Żaba jest mniejsza niż zasięg jego skoku.
+Zadanie
+
+Napisz program, który pomoże panu Żabowi stwierdzić, czy jego plan dotarcia suchą nogą do pani Żaby jest realny.
+Wejście
+
+W pierwszym wierszu wejścia znajduje się liczba naturalna n (nie większa od 1000) określająca liczbę kamieni wystających ponad powierzchnię jeziora. W każdym z kolejnych n wierszy znajduje się para liczb całkowitych określających współrzędne jednego z kamieni. Pierwsza z tych par określa współrzędne kamienia, na którym siedzi pan Żab, a druga – współrzędne kamienia, na którym siedzi pani Żaba.
+Wyjście
+
+W pierwszym i jedynym wierszu wyjścia znajduje się jedna liczba rzeczywista (podana z dokładnością do setnych części) określająca, jak daleko co najmniej pan Żab musi umieć skakać, by móc dotrzeć do pani Żaby, nie zamoczywszy nogi.
+Przykład
+
+Dla danych wejściowych
+4
+0 0
+4 4
+0 3
+2 1
+
+poprawną odpowiedzią jest
+3.61

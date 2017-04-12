@@ -1,0 +1,19 @@
+Autobus
+Problem code: CERC13L | Time: 1 s | Memory: 16 MB | Solved: no | print | Statistics are frozen
+
+Autobus z n pasażerami zatrzymuje się na przystanku. Wysiada dokładnie połowa pasażerów, plus dodatkowe pół pasażera. Na następnym przystanku dzieje się to samo: połowa pasażerów plus połówka pasażera opuszcza autobus. Dzieje się tak przez k przystanków. Wiedząc, że z ostatniego przystanku autobus odjeżdża pusty, i podczas wycieczki nikomu nic się nie stało, wyznacz początkową liczbę pasażerów n.
+Wejście
+
+W pierwszej linii znajduje się liczba naturalna t - liczba przypadków testowych. Potem następują przypadki testowe. Każdy przypadek testowy to jedna liczba naturalna k, oznaczająca liczbę przystanków. (1 <= k <= 30).
+Wyjście
+
+Dla każdego przypadku testowego wypisz w osobnej linii początkową liczbę pasażerów autobusu.
+Przykład
+
+Dla danych wejściowych
+2
+1
+3
+poprawną odpowiedzią jest
+1
+7

@@ -1,0 +1,40 @@
+Problem code: F1 | Time: 5 s | Memory: 32 MB | Solved: no | print | Statistics are frozen
+
+W pewnym popularnym sporcie motorowym bolid startujący w wyścigu musi przejechać N pełnych okrążeń toru. Podczas każdego okrążenia pojazd spala stałą ilość paliwa - stąd ilość paliwa będziemy mierzyć w liczbie okrążeń, które pozwala przejechać.
+Po każdym okrążeniu bolid może, ale nie musi zjechać do pitstopu na P sekund. Podczas wizyty bolidu w pitstopie mechanicy zespołu mogą wykonać dowolne spośród poniższych czynności:
+Zwiększyć ilość paliwa w baku bolidu (nie bardziej niż do N)
+Zmienić rodzaj opon, na których bolid jeździ
+Rozważamy zespół dysponujący dwoma rodzajami opon. Osiągi bolidu zależą od:
+Ilości benzyny w baku pojazdu
+Rodzaju założonych opon
+Znając czas pokonania okrążenia w zależności od ilości paliwa i rodzaju założonych opon, oblicz minimalny czas przejechania całego wyścigu, z jednym zastrzeżeniem:
+Każdy rodzaj opon musi zostać wykorzystany podczas przynajmniej jednego okrążenia
+Oczywiście zespół ma dowolność w zakresie ustalenia ilości paliwa i rodzaju opon bolidu w momencie startu wyścigu.
+Wejście
+
+W pierwszej linii znajduje się liczba naturalna T, oznaczająca liczbę zestawów testowych. Następnie następują opisy kolejnych wyścigów, oddzielone od siebie pustymi liniami.
+Opis pojedynczego wyścigu zaczyna się od linii zawierającej dwie liczby N i P (1 < N <= 1000, 0 < P <= 100).
+W kolejnych N liniach opisu wyścigu znajduje się opis osiągów bolidu. W i-tej linii opisu osiągów (numerujemy od 1) z nich znajdują się dwie liczby X[i], Y[i]. Liczba X[i] oznacza czas potrzebny na przejechanie okrążenia z ilością paliwa równą i, przy użyciu opon pierwszego rodzaju. Y[i] ma znaczenie analogiczne, ale dla drugiego rodzaju opon ( 0<X[i],Y[i]<=1000 ).
+N to liczba naturalna. P, X[i] oraz Y[i] są liczbami rzeczywistymi podanymi z dokładnością do 3 cyfr po przecinku.
+Oczywiście osiągi bolidu są zgodne z prawami fizyki, czyli mówiąc potocznie - im mniej paliwa w baku, tym większą prędkość pojazd może osiągnąć. Formalizując to założenie: X[i] <= X[i+1], Y[i] <= Y[i+1], dla wszystkich wartości i dla których to wyrażenie ma sens.
+Wyjście
+
+Dla każdego zestawu należy wypisać w osobnej linii minimalny czas ukończenia wyścigu z dokładnością do 3 cyfr po przecinku.
+Przykład
+
+Dla danych wejściowych
+2
+3 5.000
+1.000 7.000
+2.000 9.000
+3.000 11.000 
+
+5 15.000 
+1.000 5.000
+45.000 10.000
+80.000 99.342 
+122.000 1000.000
+1000.000 1000.000
+poprawną odpowiedzią jest
+15.000
+61.000

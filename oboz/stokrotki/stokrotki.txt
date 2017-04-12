@@ -1,0 +1,23 @@
+Dla danej planszy liczb nieujemnych podaj maksymalną sumę liczb, jaką można zebrać idąc z lewego narożnika (na górze) do prawego (na dole) w taki sposób, że dozwolone są tylko ruchy w dół lub w prawo.
+Wejście
+
+W pierwszej linii wejścia dana jest liczba testów. Każdy test rozpoczyna się dwoma liczbami h, w (1 ≤ h, w ≤ 1000) zadającymi liczbę wierszy i kolumn planszy. Następnie dana jest plansza o tychże wymiarach wypełniona liczbami co do modułu nie większymi od miliona.
+Wyjście
+
+Dla każdego testu należy wypisać jedną liczbę – odpowiedź zgodną z opisem w zadaniu.
+Przykład
+
+Dla danych wejściowych
+2
+
+2 3
+1 7 9
+2 8 4
+
+3 4
+1 1 1 1
+2 3 1 7
+1 1 2 8
+poprawną odpowiedzią jest
+21
+22

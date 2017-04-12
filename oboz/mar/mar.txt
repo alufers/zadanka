@@ -1,0 +1,28 @@
+Marsz na orientację
+Problem code: MAR | Time: 30 s | Memory: 128 MB | Solved: no | print | Statistics are frozen
+
+Organizujesz marsz na orientację. Już wybrałeś n interesujących punktów do odwiedzenia przez uczestników marszu, oraz ustaliłeś długość trasy. Chciałbyś, żeby trasa przebiegała przez wszystkie punkty, przez każdy dokładnie raz, a dodatkowo na koniec wróciła do punktu początkowego.
+Sprawdź, czy w ogóle da się ustalić trasę spełniającą te warunki.
+Wejście
+
+W pierwszej linii wejścia znajdują się dwie liczby naturalne: 2 <= n <= 14 oraz 1 <= L <= 1015. Oznaczają one kolejno liczbę interesujących punktów oraz wymaganą długość trasy. Potem nastepuje opis punktów, n linii po n liczb całkowitych każda. i-ta liczba w j-tym wierszu (dij) oznacza odległość pomiędzy punktem i-tym a punktem j-tym. (1 <= dij <= L dla i różnych od j, dii = 0 ). Dla wszystkich 1 <= i,j,k <= n zachodzi: dij = dji, dij <= dik + dkj
+Wyjście
+
+Jeżeli da się ustalić trasę zgodnie z wymaganiami, na wyjściu należy wypisać jedną linię z napisem "possible". W przeciwnym wypadku należy wypisać "impossible".
+Przykład
+
+Dla danych wejściowych
+4 10
+0 3 2 1
+3 0 1 3
+2 1 0 2
+1 3 2 0
+poprawną odpowiedzią jest
+possible
+Dla danych wejściowych
+3 5
+0 1 2
+1 0 3
+2 3 0
+poprawną odpowiedzią jest
+impossible

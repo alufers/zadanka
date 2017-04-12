@@ -1,0 +1,29 @@
+Spryskiwacz
+Problem code: ANSORT | Time: 3 s | Memory: 12 MB | Solved: no | print
+
+
+W ogródku Maćka jest spryskiwacz (w punkcie 0,0) i krasnoludki (w różnych innych miejscach). Spryskiwacz spryskuje krasnoludki w sposób właściwy spryskiwaczom: obraca się, a w ustalonej pozycji spryskuje krasnoludki od najbliższego do najdalszego. Spryskiwacz zaczyna patrząc "w prawo", to znaczy w kierunku osi X.
+Mając dane pozycje krasnoludków określ kolejność, w której zostaną spryskane.
+Wejście
+
+W pierwszej linii dana jest liczba n (1 ≤ n ≤ 500000) oznaczająca ilość krasnoludków. Następnie danych jest n par liczb całkowitych xi, yi (0 ≤ xi, yi ≤ 1000, (xi, yi) ≠ (0,0) ) – są to współrzędne krasnoludków.
+Wyjście
+
+Należy wypisać n par liczb: pozycje krasnoludków w kolejności spryskiwania.
+Przykład
+
+Dla danych wejściowych
+6
+-5 3
+34 -27
+6 14
+3 7
+42 0
+-11 -92
+poprawną odpowiedzią jest
+42 0
+3 7
+6 14
+-5 3
+-11 -92
+34 -27
