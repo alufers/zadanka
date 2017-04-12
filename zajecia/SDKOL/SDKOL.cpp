@@ -13,8 +13,8 @@ int main() {
     cin >> op;
     if (op == "push") {
       int tmp;
-      cin >> tmp;`
-      vec.push_back(tmp);
+      cin >> tmp;
+      vec.insert(vec.begin(), tmp);
     } else if (op == "top") {
       if (vec.size() == 0) {
         continue;

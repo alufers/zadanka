@@ -1,0 +1,24 @@
+Prosta kolejka
+Problem code: SDKOL | Time: 1 s | Memory: 32 MB | Solved: no | print
+
+Zaprogramuj poznaną na wykładzie strukturę danych - kolejkę. Zapewnij obsługę następujących operacji:
+push x - wstaw do kolejki liczbę x, x ≤ 1000.
+pop - jeśli kolejka nie jest pusta, zdejmij z niej jedną liczbę
+top - jeśli kolejka nie jest pusta, wypisz na ekran liczbę na szczycie kolejki i przejdź do nowej linii.
+Wejście
+
+n - liczba operacji do wykonania na (początkowo pustej) kolejce (n <= 50000). Następnie n operacji, po jednej w linii, według podanego powyżej formatu.
+Wyjście
+
+Wynik wszystkich operacji "top", po jednej w linii, w kolejności odpowiadającej kolejności poleceń "top" na wejściu. W ostatniej linii napisz "all done".
+Przykład
+
+Dla danych wejściowych
+4
+top
+push 1
+push 2
+top
+poprawną odpowiedzią jest
+1
+all done
