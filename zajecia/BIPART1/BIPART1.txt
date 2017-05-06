@@ -1,0 +1,39 @@
+Graf dwudzielny
+Problem code: BIPART1 | Time: 3 s | Memory: 32 MB | Solved: no | print
+
+Dany jest graf nieskierowany. Sprawdź czy jest on dwudzielny, tzn. czy można pokolorować jego wierzchołki dwoma kolorami, tak aby, nie było dwóch połączonych wierzchołków jednakowego koloru.
+Wejście
+
+n,m - w pierwszym wierszu podane są dwie liczby; n - liczba wierzchołków; m - liczba krawędzi
+w kolejnych m wierszach podane są krawędzie w postaci par (a,b).
+Możesz założyć, że
+1 ≤ n ≤ 10^6
+0 ≤ m ≤ 10^6
+1 ≤ a,b ≤ n
+Wyjście
+
+Wypisz TAK lub NIE w zależności od tego, czy dany graf jest dwudzielny.
+Przykład 1
+
+Dla danych wejściowych
+7 7
+1 2
+2 3
+3 1
+4 5
+5 6
+6 7
+7 4
+
+poprawną odpowiedzią jest
+NIE
+Przykład 2
+
+Dla danych wejściowych
+4 3
+1 2
+2 3
+3 4
+
+poprawną odpowiedzią jest
+TAK

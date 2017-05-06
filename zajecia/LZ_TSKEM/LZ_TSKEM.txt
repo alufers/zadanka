@@ -1,0 +1,20 @@
+W Techbanie, najbardziej zaawansowanym technologicznie mieście Bajtocji uruchomiono niedawno Szybką Kolej Elektromagnetyczną (w skrócie SKE). W mieście wybudowano sieć n kolejno ponumerowanych stacji, między którymi kursuje m linii SKE. Każda z linii porusza się po trasie składającej się z określonej liczby stacji, w obu kierunkach.
+Profesor Fatbit, który niedawno zaczął wykładać na uniwersytecie Techbańskim, chciałby znaleźć najwygodniejszą drogę (z możliwymi przesiadkami) pomiędzy stacjami położonymi nieopodal jego domu i uniwersytetu. SKE porusza się błyskawicznie, więc jedynym problemem są niewygodne przesiadki, zwłaszcza że profesor podróżuje ze sporym zapasem doświadczalnego kisielu. Profesor jest bardzo zajętym człowiekiem, więc poprosił Cię o policzenie minimalnej liczby przesiadek którą musi zrobić, by dostać się do uniwersytetu.
+Wejście
+
+W pierwszym wierszu wejścia znajdują się dwie liczby całkowite - n (2<=n<=1000) czyli liczbę stacji SKE, ponumerowanych od 1 do n (zakładamy że 1 to numer stacji przy domu profesora, a n to numer stacji przy uniwersytecie) oraz m (1<=m<=100) - ilość linii SKE. w kolejnych m wierszach wejścia znajdują się opisy linii SKE. Każdy opis składa się z liczby k (1<=k<=100) - ilości stacji na których zatrzymuje się dana linia oraz następujących po niej k liczb będących numerami kolejnych przystanków.
+Wyjście
+
+Jedna liczba całkowita oznaczająca minimalną ilość przesiadek jaką musi zrobić profesor. W przypadku kiedy niemożliwe jest dotarcie do uniwersytetu, należy wypisać -1.
+Przykład
+
+Dla danych wejściowych
+10 5
+4 1 3 6 2
+4 5 7 3 4
+3 4 6 8
+2 4 9
+3 8 9 10
+poprawna odpowiedzią jest
+2
+(przesiadki na stacjach 6 i 8)
