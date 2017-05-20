@@ -32,6 +32,10 @@ int main() {
     }
     queue<int> bfs;
     vector<int> iloscOddalonych;
+    iloscOddalonych.clear();
+    while(bfs.size()) {
+      bfs.pop();
+    }
     iloscOddalonych.push_back(0);
     bfs.push(0);
 
@@ -50,6 +54,7 @@ int main() {
 
           if (odleglosc[aktualnaKomnata] + 1 >= iloscOddalonych.size()) {
             // cout << "NOWY\n";
+            
             iloscOddalonych.push_back(1);
           } else {
             iloscOddalonych[odleglosc[aktualnaKomnata] + 1] += 1;
@@ -62,7 +67,9 @@ int main() {
       // cout << "ILOS" << i << " " << iloscOddalonych[i] << "\n";
       if (iloscOddalonych[i] > k) {
         cout << i << "\n";
+
         ok = false;
+        break;
       }
     }
 
