@@ -33,18 +33,20 @@ int main() {
     queue<int> bfs;
     vector<int> iloscOddalonych;
     iloscOddalonych.clear();
-    while(bfs.size()) {
+    while (bfs.size()) {
       bfs.pop();
     }
     iloscOddalonych.push_back(0);
     bfs.push(0);
 
     while (bfs.size() > 0) {
-      int aktualnaKomnata = bfs.back();
+      int aktualnaKomnata = bfs.front();
       bfs.pop();
+     //cout << "Przechodze " << aktualnaKomnata << "\n";
       for (unsigned int i = 0; i < komnaty[aktualnaKomnata].size(); i++) {
         int nastepnaKomnata = komnaty[aktualnaKomnata][i];
         if (odleglosc[nastepnaKomnata] == -1) {
+        //  cout << "Pushuje " << nastepnaKomnata << "\n";
           bfs.push(nastepnaKomnata);
         }
         if (odleglosc[nastepnaKomnata] == -1 ||
@@ -53,10 +55,11 @@ int main() {
           // cout << "ODLEGLOSC:" << odleglosc[aktualnaKomnata] + 1 << "\n";
 
           if (odleglosc[aktualnaKomnata] + 1 >= iloscOddalonych.size()) {
-            // cout << "NOWY\n";
-            
+           // cout << "NOWY\n";
+
             iloscOddalonych.push_back(1);
           } else {
+         //   cout << "DODAJE\n";
             iloscOddalonych[odleglosc[aktualnaKomnata] + 1] += 1;
           }
         }
@@ -64,7 +67,7 @@ int main() {
     }
     bool ok = true;
     for (int i = 0; i < iloscOddalonych.size(); i++) {
-      // cout << "ILOS" << i << " " << iloscOddalonych[i] << "\n";
+    //  cout << "ILOS" << i << " " << iloscOddalonych[i] << "\n";
       if (iloscOddalonych[i] > k) {
         cout << i << "\n";
 
