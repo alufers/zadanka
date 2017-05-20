@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
     #syrupy.py -C -S $3 < $2 #time program.bin < input file
     time $3 < $2
     echo ""
-    echo "---------";
+    echo "-------------------------------------------------------";
     echo "Finished!";
 else
     echo "-------------------------------------------------------"
