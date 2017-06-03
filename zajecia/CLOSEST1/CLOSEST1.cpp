@@ -27,6 +27,7 @@ int main() {
 
   while(Q.size()) {
       pair<int, int> aktualny = Q.front();
+      AktualnI = aktualny.first;
       Q.pop();
       if(grid[aktualny.first][aktualny.second] > 0) {
           continue;
