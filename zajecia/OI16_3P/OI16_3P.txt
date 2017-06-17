@@ -1,0 +1,34 @@
+Wiedźmak
+Problem code: OI16_3P | Time: 1 s | Memory: 64 MB | Solved: no | print
+
+Bajtazar został wiedźmakiem - pogromcą potworów. Przyszło mu wracać do swojego rodzimego Bajtogrodu przez krainę pełną potworów. Szczęśliwie, ludzie zamieszkujący tę krainę, walczący od pokoleń z potworami, opanowali sztukę wytwarzania specjalistycznych mieczy pomocnych w konfrontacji z nimi. W krainie, przez którą wędruje Bajtazar, znajduje się wiele miejscowości i łączących je dróg. Drogi nie krzyżują się poza miejscowościami, choć niektóre z nich prowadzą nie tylko po ziemi, ale i przez podziemia. Bajtazar zebrał informacje o tej krainie (jako wiedźmak lubi wiedzieć różne rzeczy). Wie, jakiego rodzaju potwory można spotkać na każdej drodze i ile czasu potrzeba na jej przebycie. Wie też, w których wioskach można znaleźć kowali i na jakie rodzaje potworów potrafią oni wykuwać miecze. W tej chwili nie posiada żadnych mieczy i chce jak najszybciej dostać się do Bajtogrodu. Wstyd się przyznać, ale choć jest wiedźmakiem, to nie wie, jak to zrobić. Pomóż mu i znajdź taką trasę, która jak najszybciej doprowadzi go do Bajtogrodu i na której, zawsze gdy może spotkać potwory danego rodzaju, ma wcześniej możliwość zaopatrzenia się w miecz odpowiedni do walki z nimi. Bajtazar jest bardzo silny i może nosić ze sobą dowolnie wiele mieczy.
+Wejście
+
+Pierwszy wiersz standardowego wejścia zawiera cztery liczby całkowite: n,m,p,k (1 <= n <= 200, 0 <= m <= 3000, 1 <= p <= 13, 0 <= k <= n) pooddzielane pojedynczymi odstępami, oznaczające odpowiednio: liczbę miejscowości, liczbę łączących je dróg, liczbę gatunków potworów i liczbę kowali. Miejscowości są ponumerowane od 1 do n, przy czym Bajtogród ma numer n, a miejscowość, z której wyrusza Bajtazar - numer 1. Rodzaje potworów są ponumerowane od 1 do p. W kolejnych wierszach opisani są kowale, po jednym w każdym z tych wierszy. Wiersz (i+1)-szy zawiera liczby całkowite w_i, q_i, r_i1, r_i2, ..., r_i(q_i) (1 <= w_i <= n, 1 <= q_i <= p, 1 <= r_ij <= p) pooddzielane pojedynczymi odstępami, oznaczające odpowiednio: numer miejscowości, w której mieszka kowal, liczbę rodzajów potworów, przeciwko którym potrafi on wykuć miecze, oraz rodzaje tych potworów (w kolejności rosnącej). Kowale mogą mieszkać w tych samych miejscowościach. W kolejnych wierszach opisane są drogi. Wiersz (k+i+1)-szy zawiera liczby całkowite v_i, w_i, t_i, s_i, u_i1, u_i2, ..., u_i(s_i) (1 <= v_1 < w_1 <= n, 1 <= t_i <= 500, 0 <= s_i <= p, 1 <= u_ij <= p) pooddzielane pojedynczymi odstępami, oznaczające odpowiednio: miejscowości, które łączy droga, czas potrzebny na przebycie drogi (jest on taki sam w każdym kierunku), liczbę rodzajów potworów, które można spotkać na danej drodze, oraz rodzaje tych potworów (w kolejności rosnącej). Żadne dwie drogi nie łączą tej samej pary miejscowości.
+Wyjście
+
+Twój program powinien wypisać na standardowe wyjście jedną liczbę całkowitą - minimalny łączny czas potrzebny na dotarcie do Bajtogrodu. W przypadku, gdy dotarcie do Bajtogrodu jest niemożliwe, należy wypisać -1.
+Przykład
+
+Dla danych wejściowych
+6 7 4 2
+2 1 2
+3 2 1 3
+1 2 2 0
+2 3 9 0
+1 4 2 1 2
+2 5 3 0
+4 5 5 2 2 3
+4 6 18 0
+5 6 3 2 1 2
+poprawną odpowiedzią jest
+24
+Natomiast dla danych
+2 1 1 1
+2 1 1
+1 2 1 1 1
+poprawną odpowiedzią jest
+-1
+Komentarz do przykładu
+
+W pierwszym przykładzie na rysunku kółka reprezentują miejscowości, a liczby w ich wnętrzu to ich numery. Krawędzie reprezentują drogi, a liczby umieszczone nad nimi - czas potrzebny na ich przebycie. Liczby znajdujące się obok kółek (pisane kursywą) oznaczają rodzaje potworów, przeciwko którym kowal z danej miejscowości potrafi wykuć miecze. Liczby pod krawędziami (pisane kursywą) oznaczają rodzaje potworów, które można spotkać na danej drodze. Wiedźmak Bajtazar powinien najpierw pójść do miejscowości nr 2, zdobyć miecz przeciwko potworom nr 2, wrócić do miejscowości nr 1, potem do miejscowości nr 4 i w końcu do Bajtogrodu. W drugim przykładzie Bajtazar nie jest w stanie zdobyć miecza na potwora nr 1, więc nie może też dojść do Bajtogrodu.

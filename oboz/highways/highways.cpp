@@ -22,7 +22,7 @@ bool operator<(MozliwaAutostrada const &a, MozliwaAutostrada const &b) {
   return a.koszt < b.koszt;
 }
 
-int przedstawiciele[1003];
+int przedstawiciele[7005];
 
 int find(int x) {
   return przedstawiciele[x] == x ? (x) : (przedstawiciele[x] =

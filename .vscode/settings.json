@@ -55,6 +55,7 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp"
     }
 }

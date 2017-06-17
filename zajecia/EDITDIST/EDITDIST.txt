@@ -1,0 +1,17 @@
+Odległość edycyjna
+Problem code: EDITDIST | Time: 1 s | Memory: 8 MB | Solved: no | print
+
+Bajtazar pisze w Notatniku. Niestety, zrobił kilka literówek. Bajtazar może jednak usuwać i dodawać litery do tekstu, który napisał. Ile takich operacji musi on wykonać, aby poprawić wszystkie literówki?
+Wejście
+
+Na wejściu dana jest długość tekstu napisanego przez Bajtazara (nie większa niż 1000) oraz sam tekst. Następnie dana jest długość tekstu, który Bajtazar chciał napisać (nie większa niż 1000) oraz ów tekst. Teksty składają się wyłącznie z małych liter alfabetu angielskiego.
+Wyjście
+
+Na wyjściu należy podać jedną liczbę - minimalną ilość operacji niezbędną do zamienienia pierwszego tekstu w drugi.
+Przykład
+
+Dla danych wejściowych
+6 orczyk
+5 oracz
+poprawną odpowiedzią jest
+3

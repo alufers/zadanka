@@ -1,0 +1,29 @@
+Weryfikacja LCS
+Problem code: LCS3 | Time: s | Memory: MB | Solved: no | print
+
+Słowem u nazywamy dowolny skończony ciąg liter z alfabetu {a,b,c,...,z}. Podciągiem słowa u jest słowo utworzone przez wybranie jego dowolnego podciągu, np. podciągami słowa deskorolka są między innymi ola, elka, deska, kolka, sroka. Dla danych dwóch słów u i v należy znaleźć ich najdłuższy wspólny podciąg. Na przykład wspólne podciągi słów u=deskorolka i v=stokrotka, to między innymi a, o, ka, kka, oa, sroka, sooka, skoka, skroka, soroka, skroka. Łatwo zauważyć, że nie istnieje wspólny podciąg słów u i v, o długości większej niż 6. Tak więc w tym przykładzie najdłuższym wspólnym podciągiem jest zarówno słowo skroka, jak i soroka.
+Zadanie
+
+Napisz program, który:
+wczyta ze standardowego wejścia słowa u, v, x
+sprawdzi, czy x jest najdłuższym wspólnym podciągiem słów u i v.
+Wejście
+
+W każdym z trzech wierszy znajduje się jedno słowo, odpowiednio: u, v, x. Każde z nich o długości nie większej niż 1000.
+Wyjście
+
+W jedynym wierszu wyjścia należy wypisać TAK, jeśli x jest najdłuższym wspólnym podciągiem słów u i v, oraz słowo NIE, w przeciwnym przypadku.
+Przykład
+
+Dla danych wejściowych
+abba
+baba
+bba
+poprawną odpowiedzią jest
+TAK
+a dla danych wejściowych
+abba
+baba
+aab
+poprawną odpowiedzią jest
+NIE
