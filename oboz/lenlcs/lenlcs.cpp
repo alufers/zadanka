@@ -28,14 +28,9 @@ int max(int a, int b) { return (a > b) ? a : b; }
 
 int main() {
   ios_base::sync_with_stdio(false);
-  int n = 0;
-  cin >> n;
-  int noop;
-  for (int i = 0; i < n; i++) {
-    string slowo1;
+  string slowo1;
     string slowo2;
-    cin >> noop >> slowo1 >> noop >> slowo2;
+    cin /*>> noop*/ >> slowo1 /*>> noop*/ >> slowo2;
     cout << lcs(slowo1, slowo2) << "\n";
-  }
   return 0;
 }

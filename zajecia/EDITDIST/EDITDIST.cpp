@@ -1,41 +1,34 @@
+#include <algorithm>
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-int lcs(string X, string Y) {
-  int m = X.size();
-  int n = Y.size();
-  int L[m + 1][n + 1];
-  int i, j;
-
-  for (i = 0; i <= m; i++) {
-    for (j = 0; j <= n; j++) {
-      if (i == 0 || j == 0)
-        L[i][j] = 0;
-
-      else if (X[i - 1] == Y[j - 1])
-        L[i][j] = L[i - 1][j - 1] + 1;
-
-      else
-        L[i][j] = max(L[i - 1][j], L[i][j - 1]);
-    }
-  }
-  return L[m][n];
-}
-
-int max(int a, int b) { return (a > b) ? a : b; }
+int tab[1002][1002];
 
 int main() {
   ios_base::sync_with_stdio(false);
-  int n = 0;
-  cin >> n;
-  int noop;
-  for (int i = 0; i < n; i++) {
-    string slowo1;
-    string slowo2;
-    cin >> noop >> slowo1 >> noop >> slowo2;
-    cout << lcs(slowo1, slowo2) << "\n";
+  int _;
+  string a, b;
+  cin >> _ >> a >> _ >> b;
+
+  tab[0][0] = 0;
+  for (int i = 0; i < a.size(); i++) {
+    tab[i][0] = i;
   }
+  for (int i = 0; i < b.size(); i++) {
+    tab[0][i] = i;
+  }
+  for (int y = 1; y < b.size(); y++) {
+    for (int x = 1; x < a.size(); x++) {
+      tab[x][y] = min(tab[x - 1][y], tab[x][y - 1]) + 1;
+      if (a[x] == b[y]) {
+        tab[x][y] = min(tab[x][y], tab[x - 1][y - 1]);
+      }/* else {
+        tab[x][y] = min(tab[x][y], tab[x - 1][y - 1] + 1);
+      }*/
+    }
+  }
+
+  cout << tab[a.size() - 1][b.size() - 1];
   return 0;
 }

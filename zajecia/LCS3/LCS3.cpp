@@ -3,6 +3,8 @@
 
 using namespace std;
 
+int tab[1002][1002];
+
 bool jestPodciagiem(string a, string x) {
   int xpos = 0;
   for (int i = 0; i < a.size(); i++) {
@@ -15,6 +17,8 @@ bool jestPodciagiem(string a, string x) {
   }
   return false;
 }
+
+
 
 int main() {
   ios_base::sync_with_stdio(false);

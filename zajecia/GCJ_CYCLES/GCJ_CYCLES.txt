@@ -1,0 +1,29 @@
+Cykl Hamitona
+Problem code: GCJ_CYCLES | Time: 1 s | Memory: 64 MB | Solved: no | print
+
+Dany jest graf pełny (bez pętli tj. krawędzi x -> x), nieskierowany o n wierzchołkach numerowanych od 1 do n. Dane jest również k zabronionych krawędzi z tego grafu.
+Zadanie
+
+Oblicz ile jest różnych cykli Hamiltonowskich w tym grafie takich, które nie używają żadnej z zabronionych krawędzi. Dla przypomnienia cykl Hamiltonowski to taki, który odwiedza każdy wierzchołek dokładnie raz. Cykle uznajemy za różne gdy zawierają inny zbiór krawędzi np. cykle 1 2 3 4 1, 1 4 3 2 1 oraz 2 3 4 1 2 są równe, ale 1 3 2 4 1 jest różny od poprzednich.
+Wejście
+
+W pierwszym wierszu podane jest n i k, 3 ≤ n ≤ 15, 0 ≤ k ≤ 15. W następnych k liniach podane są po dwie liczby oznaczające numery wierzchołków połączonych zabronioną krawędzią. Żadna krawędź nie pojawi się dwukrotnie na tej liście.
+Wyjście
+
+Dla każdego testu wypisz jedną liczbę - liczbę różnych cykli Hamiltona. Ponieważ odpowiedź może być duża wypisz ją modulo 9901.
+Przykład
+
+Dla danych wejściowych
+4 1
+1 2
+poprawną odpowiedzią jest
+1
+Dla danych wejściowych
+8 4
+1 2
+2 3
+4 5
+5 6
+poprawną odpowiedzią jest
+660
+W pierwszym teście przykładowym jest tylko jeden cykl: 1 3 2 4 1.
