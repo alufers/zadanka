@@ -1,0 +1,31 @@
+ZERO_WIELOMIANU
+Problem code: ZERO_WIELOMIANU | Time: 1 s | Memory: 64 MB | Solved: no | print
+
+Zadanie
+
+Na wejściu masz podane kolejne współczynniki wielomianu stopnia n. Twoim zadaniem jest napisanie programu znajdującego jedno z jego miejsc zerowych w przedziale (0,100). Jest zagwarantowane, wielomian w punkcie 0 jest dodatni, natomiast w punkcie 100 jest ujemny i ma dokładnie jeden pierwiastek oraz jest monotoniczny na całym przedziale.
+Wejście
+
+Pierwszy wiersz zawiera liczbę n. Kolejny wiersz zawiera n rzeczywistych współczynników a_i wielomianu stojących odpowiednio przy x^0, x^1, x^2..., x^{n-1}. Możesz założyć, że n <= 5 oraz -10^9<= a_i <= 10^9.
+Wyjście
+
+Na wyjściu powinna się znaleźć jedna liczba rzeczywista zapisana z dokładnością do 7 miejsc po przecinku - odpowiedź uznajemy za poprawną, jeśli wypisana liczba różni się od wyniku conajwyżej o 10^-7.
+Przykład
+
+Dla danych wejściowych
+2
+50.00 -1.00
+poprawną odpowiedzią jest
+50.0000000
+Przykład 2
+
+Dla danych wejściowych
+4
+7500 -2200 -97 -1
+poprawną odpowiedzią jest
+3.0000000
+Wypisywanie wyniku
+
+Wynik należy wypisać za pomocą instrukcji:
+double wynik = 13.05454645645;//przykladowy wynik z wieksza dokladnoscia
+cout << setprecision(7) << fixed << wynik << "\n";
