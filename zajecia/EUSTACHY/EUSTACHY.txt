@@ -7,7 +7,7 @@ Wejście
 W pierwszym wierszu podana jest ilość ciągów k (2 lub 3). Następne k wierszy zawiera niepuste ciągi znaków składające się z co najwyżej 500 małych liter alfabetu angielskiego.
 Wyjście
 
-Należy wypisać dwie liczby: długość najdłuższego wspólnego podciągu podanych k napisów oraz ilość różnych najdłuższych podciągów (modulo 109).
+Należy wypisać dwie liczby: długość najdłuższego wspólnego podciągu podanych k napisów oraz ilość różnych najdłuższych podciągów (modulo 10^9).
 Przykład
 
 Dla danych wejściowych

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+
+
 using namespace std;
 
 int lcs(string X, string Y) {
@@ -29,8 +31,8 @@ int max(int a, int b) { return (a > b) ? a : b; }
 int main() {
   ios_base::sync_with_stdio(false);
   string slowo1;
-    string slowo2;
-    cin /*>> noop*/ >> slowo1 /*>> noop*/ >> slowo2;
-    cout << lcs(slowo1, slowo2) << "\n";
+  string slowo2;
+  cin /*>> noop*/ >> slowo1 /*>> noop*/ >> slowo2;
+  cout << lcs(slowo1, slowo2) << "\n";
   return 0;
 }
