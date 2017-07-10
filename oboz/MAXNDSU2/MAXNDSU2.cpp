@@ -12,5 +12,6 @@ int main() {
     cin >> tmp;
     vec.push_back(tmp);
   }
+  
   return 0;
 }

@@ -1,0 +1,4 @@
+var k = "Witam";
+if(strlen(k) >= 5) {
+    
+}
