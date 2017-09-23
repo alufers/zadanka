@@ -1,0 +1,18 @@
+Równoważność cykliczna dwóch słów
+Problem code: EQUIVCYC | Time: 2 s | Memory: 32 MB | Solved: no | print
+
+Dane są dwa słowa - sprawdź, czy są one równoważne cyklicznie, tzn. czy można operacjami rotacji (pierwszej litery na koniec) otrzymać drugie słowo z pierwszego słowa. Na wejściu dane są słowa o długości co najwyżej równej 1000000
+Przykład
+
+Wejście
+3
+albaalbaaaba
+baaabaalbaal
+abababa
+ababaaa
+abababa
+babaaba
+Wyjście
+TAK
+NIE
+TAK

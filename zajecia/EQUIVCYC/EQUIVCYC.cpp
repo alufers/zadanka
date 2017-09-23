@@ -9,28 +9,35 @@ int main() {
   for (int k = 0; k < n; k++) {
     string wzorzec;
     string tekst;
-    cin >> wzorzec >> tekst;
+    cin >> tekst >> wzorzec;
 
     int j = 0;
-    //  pi[0] = 0;
-    string str = wzorzec + "#" + tekst;
+    pi[0] = 0;
+
+    string str = tekst +"$" + tekst;
+    for (int i = 1; i < str.size(); i++) {
+      pi[i] = 0;
+    }
     for (int i = 1; i < str.size(); i++) {
       while (j > 0 && str[i] != str[j]) {
         j = pi[j - 1];
       }
-      if (wzorzec[j] == str[i]) {
+      if (str[j] == str[i]) {
         j++;
       }
 
       pi[i] = j;
     }
+    int ok = false;
     for (int i = 0; i < str.size(); i++) {
       // cout << "(" << str[i] << ") " << pi[i] << ", ";
-      if (pi[i] == wzorzec.size()) {
-        // cout << "MAM NA I = " << i << "\n";
-        cout << (i - (2 * wzorzec.size())) << "\n";
+      if (pi[i] == wzorzec.size() && !ok) {
+        cout << "TAK\n";
+        ok = true;
       }
     }
+    if (!ok)
+      cout << "NIE\n";
     // cout << "\n ===== \n";
   }
 

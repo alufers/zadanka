@@ -1,0 +1,17 @@
+Palindromiczne prefiksy
+Problem code: PALPREF | Time: 1 s | Memory: 32 MB | Solved: no | print
+
+W danym słowie znajdź długość najdłuższego prefiksu, będącego jednocześnie palindromem.
+Wejście
+
+Jedno słowo złożone z małych znaków alfabetu angielskiego o długości co najwyżej 1000000.
+Wyjście
+
+Pojedyncza liczba opisująca długość szukanego prefiksu.
+Przykład
+
+Dla danych wejściowych
+abacdab
+poprawną odpowiedzią jest
+3
+Wyjaśnienie do przykładu: Zarówno a, jak i aba są prefiksami będącymi palindromami, ale aba jest dłuższe.
