@@ -1,0 +1,45 @@
+Ważenie lam
+Problem code: LAMY | Time: 1 s | Memory: 16 MB | Solved: no | print
+
+Hodowcy lam z Ameryki Południowej nie mają łatwego życia. Lamy, jak bowiem wiadomo, to bardzo agresywne, krwiożercze stworzenia.
+W pewnej małej indiańskiej wiosce jest tylko jedna wysłużona waga, na której waży się lamy przeznaczone na sprzedaż. Ponieważ odważników do wagi zawsze brakuje, chętny do zakupu wybiera najlepsze sztuki ze stada poprzez porównywanie lam pomiędzy sobą. Innymi słowy, wprowadza się na wagę dwie lamy i mierzy różnicę ich wag. Ze względu na trudności w opanowaniu ważonych zwierząt, kupcy starają się ograniczyć liczbę ważeń do minimum.
+Dany jest ciąg zdarzeń, jednej z następujących dwóch postaci:
+ważenie dwóch lam i sprawdzenie różnicy ich wag,
+zapytanie o różnicę wag dwóch zwierząt.
+Dla każdego zapytania określ odpowiedź, o ile da się ją wyznaczyć na podstawie poprzednich zdarzeń.
+Wejście
+
+Wejście składa się z kolejno następujących po sobie zestawów danych. Każdy zestaw jest następującej postaci:
+Pierwszy wiersz zestawu zawiera dwie liczby naturalne n i m (2≤n≤100000, 1≤m≤100000) – liczbę lam w stadzie i liczbę zdarzeń.
+W kolejnych m liniach znajdują się opisy zdarzeń. Mogą one mieć następującą postać:
+! a b w oznacza, że dokonano ważenia lam o numerach a i b, przy czym lama a okazała się cięższa o dokładnie w gramów (0≤w≤106).
+? a b oznacza zapytanie o różnicę między lamami a i b. Na to zapytanie powinien odpowiedzieć Twój program.
+Podanie n=m=0 oznacza koniec danych. Możesz założyć, że dane nie są sprzeczne ze sobą.
+Wyjście
+
+Dla każdego zestawu danych wypisz, w osobnych wierszach, odpowiedzi na wszystkie zapytania, w kolejności w jakiej nastąpiły na wejściu. Każda odpowiedź powinna być liczbą całkowitą (dodatnią, ujemną lub zerem), jeśli odpowiednią różnicę da się wyznaczyć. Możesz założyć, że wartość bezwzględna różnicy nie przekroczy 106. Jeśli nie da się w tym momencie jej wyznaczyć, odpowiedzią powinien być napis UNKNOWN.
+Przykład
+
+Dla danych wejściowych:
+2 2
+! 1 2 1
+? 1 2
+2 2
+! 1 2 1
+? 2 1
+4 7
+! 1 2 100
+? 2 3
+! 2 3 100
+? 2 3
+? 1 3
+! 4 3 150
+? 4 1
+0 0
+poprawną odpowiedzią jest:
+1
+-1
+UNKNOWN
+100
+200
+-50

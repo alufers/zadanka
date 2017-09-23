@@ -32,17 +32,33 @@ void Union(int a, int b) {
 
 int main() {
   ios_base::sync_with_stdio(false);
-  for (int i = 0; i < ELEMENT_COUNT; i++) {
-    sets[i] = i;
-    sizes[i] = 1;
+
+  int zestawy = 0;
+  cin >> zestawy;
+  for (int k = 0; k < zestawy; k++) {
+    int n, m;
+    cin >> n >> m;
+    for (int i = 0; i < ELEMENT_COUNT; i++) {
+      sets[i] = i;
+      sizes[i] = 1;
+    }
+    for (int i = 0; i < m; i++) {
+      int a, b;
+      cin >> a >> b;
+      a -= 1;
+      b -= 1;
+      Union(a, b);
+    }
+    bool ok = true;
+    for (int i = 0; i < n - 1; i++) {
+      if (Find(i) != Find(i + 1)) {
+        cout << "NIE\n";
+        ok = false;
+        break;
+      }
+    }
+    if (ok) {
+      cout << "TAK\n";
+    }
   }
-  Union(1, 2);
-  Union(2, 3);
-  Union(8, 9);
-  cout << "Find(3) = " << Find(3) << "\n";
-  cout << "Find(9) = " << Find(9) << "\n";
-  cout << "Union(3, 8)\n";
-  Union(3, 8);
-  cout << "Find(9) = " << Find(9) << "\n";
-  return 0;
 }
