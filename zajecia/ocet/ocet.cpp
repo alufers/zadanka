@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 const int M = 1024 * 1024;
 int w[M * 2];
 void insert(int x, int val) { /* val==1 to wstawianie, val==-1 to usuwanie */
@@ -10,7 +11,7 @@ void insert(int x, int val) { /* val==1 to wstawianie, val==-1 to usuwanie */
     return;
   }
   if (val == 1 && w[M + x] != 0) {
-      return;
+    return;
   }
   int v = M + x;
   w[v] += val;
@@ -40,31 +41,19 @@ void query(int x) {
 
 int main() {
   ios_base::sync_with_stdio(false);
-  int nZ;
-  cin >> nZ;
-
-  while (true) {
-    char op;
-    int a;
-    cin >> op >> a;
-    // cout << op << "\n";
-    if (op == 'K') {
-      nZ--;
-      if (nZ == 0)
-        break;
-      for (int i = 0; i < 2 * M; i++) {
-        w[i] = 0;
-      }
-    }
+  int n;
+  cin >> n;
+  for (int i = 0; i < n; i++) {
+    int op;
+    cin >> op;
     switch (op) {
-    case 'A':
-      insert(a, 1);
+    case 1:
       break;
-    case 'E':
-      insert(a, -1);
+    case 2:
       break;
-    case 'S':
-      query(a);
+    case 3:
+      break;
+    case 0:
       break;
     }
   }
