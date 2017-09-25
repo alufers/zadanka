@@ -45,3 +45,5 @@ poprawną odpowiedzią jest
 0
 -5
 0
+
+http://was.zaa.mimuw.edu.pl/?q=node/9
